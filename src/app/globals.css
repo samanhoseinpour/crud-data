@@ -1,3 +1,9 @@
+@import url('http://cdn.font-store.ir/shahab.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'shahab';
+}
