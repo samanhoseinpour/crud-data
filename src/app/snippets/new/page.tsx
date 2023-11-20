@@ -12,10 +12,12 @@ export default function CreateSnippets() {
         className="flex flex-col justify-center max-w-[470px] gap-3 px-[72px] mt-10"
       >
         <Input type="text" placeholder="عنوان" style="w-full" />
-        <Input
-          type="text"
+
+        <textarea
+          cols={30}
+          rows={10}
           placeholder="قطعه کد خود را جایگذاری کنید"
-          style="w-full"
+          className="w-full text-center border-b-2 p-4 border-blue-900 font-semibold outline-none rounded-xl"
         />
 
         <Button type="submit" title="ذخیره" style="w-full" />
