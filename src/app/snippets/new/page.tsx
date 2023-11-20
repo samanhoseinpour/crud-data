@@ -7,18 +7,19 @@ export default function CreateSnippets() {
         +ساخت قطعه کد جدید
       </h3>
 
-      <form
-        action=""
-        className="flex flex-col justify-center max-w-[470px] gap-3 px-[72px] mt-10"
-      >
-        <Input type="text" placeholder="عنوان" style="w-full" />
+      <form className="flex flex-col justify-center max-w-[470px] gap-3 px-[72px] mt-10">
+        <Input type="text" placeholder="عنوان" style="w-full" title="title" />
 
-        <textarea
-          cols={30}
-          rows={10}
-          placeholder="قطعه کد خود را جایگذاری کنید"
-          className="w-full text-center border-b-2 p-4 border-blue-900 font-semibold outline-none rounded-xl"
-        />
+        <label htmlFor="codeSnippet">
+          <textarea
+            name="codeSnippet"
+            id="codeSnippet"
+            cols={30}
+            rows={10}
+            placeholder="قطعه کد خود را جایگذاری کنید"
+            className="w-full text-center border-b-2 p-4 border-blue-900 font-semibold outline-none rounded-xl"
+          />
+        </label>
 
         <Button type="submit" title="ذخیره" style="w-full" />
       </form>
