@@ -15,9 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className="container mx-auto">
-        <Header />
-        {children}
+      <body>
+        <div className="container mx-auto">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
