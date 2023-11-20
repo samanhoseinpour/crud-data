@@ -4,6 +4,7 @@ export default function Input({ type, style, title, placeholder }: InputProps) {
   return (
     <label htmlFor={title}>
       <input
+        required
         name={title}
         id={title}
         type={type}
