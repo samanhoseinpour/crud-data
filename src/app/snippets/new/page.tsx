@@ -28,12 +28,12 @@ export default function CreateSnippets() {
 
   return (
     <section>
-      <h3 className="max-w-[350px] text-slate-800 mr-8 font-semibold text-[32px] text-center">
-        +ساخت قطعه کد جدید
+      <h3 className="text-slate-800 mr-8 font-semibold text-[32px] text-center">
+        ساخت قطعه کد جدید
       </h3>
 
       <form
-        className="flex flex-col justify-center max-w-[470px] gap-3 px-[72px] mt-10"
+        className="flex flex-col justify-center w-full gap-3 px-[72px] mt-10"
         action={createCodeSnippets}
       >
         <Input type="text" placeholder="عنوان" style="w-full" title="title" />
@@ -49,7 +49,7 @@ export default function CreateSnippets() {
           />
         </label>
 
-        <Button type="submit" title="ذخیره" style="w-full" />
+        <Button type="submit" title="ذخیره" />
       </form>
     </section>
   );
