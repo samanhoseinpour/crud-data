@@ -10,3 +10,9 @@ export type ButtonProps = {
   title: string;
   style?: string;
 };
+
+export interface ShowSnippetsProps {
+  params: {
+    id: string;
+  };
+}
