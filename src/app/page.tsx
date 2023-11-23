@@ -6,15 +6,14 @@ import { Button } from '@/components';
 export default async function HomePage() {
   const snippets = await db.snippets.findMany();
 
-  const renderedSnippets = snippets.map(({ id, title, codeSnippet }) => (
+  const renderedSnippets = snippets.map(({ id, title }) => (
     <div
-      className="my-6 p-6 bg-white border-r-2 border-blue-900 rounded-lg shadow"
+      className="flex justify-between my-6 p-6 bg-white border-r-2 border-blue-900 rounded-lg shadow"
       key={id}
     >
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
         {title}
       </h5>
-      <p className="mb-3 font-normal text-gray-700">{codeSnippet}</p>
       <Link
         href={`/snippets/${id}`}
         className="outline-none inline-flex items-center px-3 py-2 text-sm font-semibold text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
@@ -29,9 +28,9 @@ export default async function HomePage() {
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>
