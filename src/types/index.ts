@@ -11,8 +11,14 @@ export type ButtonProps = {
   style?: string;
 };
 
-export interface ShowSnippetsProps {
+export type ShowSnippetsProps = {
   params: {
     id: string;
   };
-}
+};
+
+export type CardProps = {
+  id?: string;
+  title: string;
+  codeSnippet: string;
+};

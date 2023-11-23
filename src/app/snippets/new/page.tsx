@@ -27,9 +27,9 @@ export default function CreateSnippets() {
   };
 
   return (
-    <section>
-      <h3 className="text-slate-800 mr-8 font-semibold text-[32px] text-center">
-        ساخت قطعه کد جدید
+    <section className="mt-12">
+      <h3 className="text-blue-700 font-semibold text-[32px] text-center">
+        +ساخت قطعه کد جدید
       </h3>
 
       <form
@@ -49,7 +49,7 @@ export default function CreateSnippets() {
           />
         </label>
 
-        <Button type="submit" title="ذخیره" />
+        <Button type="submit" title="ذخیره" style="py-4" />
       </form>
     </section>
   );
