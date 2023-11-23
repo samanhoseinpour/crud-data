@@ -6,5 +6,5 @@
 
 body {
   font-family: 'shahab';
-  @apply bg-no-repeat min-h-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-400 to-sky-200;
+  @apply bg-gray-200;
 }
