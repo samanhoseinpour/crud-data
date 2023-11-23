@@ -1,3 +1,9 @@
 export default function Header() {
-  return <h1 className="text-[72px] font-bold text-blue-900 p-8">قطعه کد</h1>;
+  return (
+    <header className="border-b border-blue-900">
+      <h1 className="text-[36px] text-center font-bold text-blue-900 py-4">
+        قطعه کد
+      </h1>
+    </header>
+  );
 }
