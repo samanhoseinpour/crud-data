@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function SnippetNotFound() {
   return (
     <div className="flex-col justify-center items-center bg-gray-100 px-12 py-24 rounded-full text-center text-blue-900">
-      <h1 className="text-xl font-bold  ">
+      <h1 className="text-xl font-bold">
         متأسفیم! اما نتوانستیم قطعه کدی را که به دنبال آن هستید، پیدا کنیم
       </h1>
 
