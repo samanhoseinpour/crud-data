@@ -20,8 +20,6 @@ export default function CreateSnippets() {
       },
     });
 
-    console.log(snippets);
-
     // redirect to root
     redirect('/');
   };
