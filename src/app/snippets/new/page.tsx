@@ -36,14 +36,13 @@ export default function CreateSnippets() {
       >
         <Input type="text" placeholder="عنوان" style="w-full" title="title" />
 
-        <label htmlFor="codeSnippet">
+        <label htmlFor="codeSnippet" className="p-3">
           <textarea
             name="codeSnippet"
             id="codeSnippet"
             cols={30}
             rows={10}
-            placeholder="قطعه کد خود را جایگذاری کنید"
-            className="w-full text-center border-b-2 p-4 border-blue-900 font-semibold outline-none rounded-xl"
+            className="w-full text-left border-b-2 p-6 border-blue-900 font-semibold outline-none rounded-xl overflow-auto"
           />
         </label>
 
